@@ -4,29 +4,43 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #E0D6B3;
+    color: #fff;
+    font-family: 'Open-sans', sans-serif;
+}
+
 .primary-text{
     color: #589EF4
 }
 
 header, section, footer{
     width: 100%;
-    margin-top: 20px;
 }
+
+
 .container{
     display: flex;
     margin: 0px 10%;
 }
-section{
-    border: 1px solid green;
-}
+
 
 /* HEADER */
+#header{
+    background-color: #1B1B1B;
+    color: #fff;
+    border-bottom: 5px solid #589EF4;
+}
 #header .container{
     justify-content: space-between;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     align-items: center;
     padding: 20px 0px;
     font-size: 25px;
+}
+
+#header .logo{
+    font-size: 35px;
 }
 
 #header li{
@@ -34,27 +48,84 @@ section{
     padding-left: 20px;
 }
 
-
-
-/* Skills */
-#skills{
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 10%;
+#header a{
+    text-decoration: none;
+    color: #fff;
 }
 
-#skills div{
-    width: 320px;
-    height: 200px;
-    border: 1px solid green;
-    margin: 10px;
+#header .navbar a:hover{
+    color: #589EF4;
+    border-bottom: 3px solid #589EF4;
+    padding-bottom: 6px;
+}
+
+#header .active{
+    color: #589EF4;
+    border-bottom: 3px solid #589EF4;
+    padding-bottom: 6px; 
+}
+
+/* Profile */
+#profile{
+    margin-top: 20px; 
+}
+
+#profile .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile .content{
+    margin: auto;
+}
+
+#profile img{
+    width: 300px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 8px;
+    border: 1px solid #589EF4;
+}
+
+#profile .content{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
+#profile{
+    font-size: 40px;
+    
+}
+
+#profile h2{
+    font-size: 25px;
+}
+
+#profile p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#profile .line{
+    background-color: #589EF4;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+#profile .content .author{
+    align-self: flex-end;
+    padding-right: 15px;
+    font-size: 18px;
+}
+
 /* PORTFOLIO */
+#portfolio{
+    background-color: #1B1B1B;
+    margin-top: 20px;   
+    padding: 10px 0px;  
+}
 #portfolio .row{
     display: flex;
     justify-content: space-between;
@@ -71,8 +142,8 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid green;
     margin: 10px;
+    background-color: #589EF4;
 }
 
 #portfolio img{
@@ -90,48 +161,99 @@ section{
 
 #portfolio .button a{
     text-decoration: none;
-    color: #171818;
+    color: #589EF4;
     font-size: 25px;
-    border: 2px solid #171818;
+    border: 2px solid #589EF4;
     padding: 15px;
-    border-radius: 55px;
+    /* border-radius: 55px; */
     margin: 10px 0;
 }
 
-/* CONTACT ME */
-#contact-me .title{
-    justify-content: flex-start;
+/* My Skills */
+#my-skills{
+    margin-top: 10px;   
+    padding: 10px 0px;  
 }
 
-#contact-me .contact{
+#my-skills .row{
+    margin: 0px 10%;
+    display: flex;
+}
+
+#my-skills h1{
+    margin-left: auto;
+    border-right: 6px solid #589EF4;
+    padding-right: 6px;
+    margin: 10px 12px 10px auto;
+}
+
+#my-skills .skills{
     justify-content: space-around;
+    padding:  10px 0px
 }
 
-.contact .form{
+#my-skills .skills > div{
     display: flex;
     flex-direction: column;
-    align-content: space-between;
 }
 
-.name-email{
+#my-skills img{
+    width: 200px;
+}
+
+#my-skills .node{
+    margin: 40px 0px 40px 0px;
+}
+
+#my-skills h2{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px 0;
+    justify-content: center;
+    padding-top: 10px;
 }
 
-.name, .email, .message{
-    display: flex;
-    flex-direction: column;
-}
-
-input{
-    width: 100%;
-}
 
 
 /* footer  */
 footer{
-    border: 1px solid orange;
-    height: 200px; 
+    margin-top: 10px;
+    background-color: #1B1B1B;
+    padding: 10px 0px;
+}
+footer .container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .sitemap{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+footer .sitemap li{
+    display: inline;
+    padding-left: 20px;
+}
+
+footer .sitemap a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .sitemap a:hover{
+    color: #589EF4;
+    border-bottom: 3px solid #589EF4;
+    padding-bottom: 6px;
+}
+
+footer .sitemap .active{
+    color: #589EF4;
+    border-bottom: 3px solid #589EF4;
+    padding-bottom: 6px; 
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
 }
